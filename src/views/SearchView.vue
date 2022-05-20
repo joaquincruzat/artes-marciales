@@ -1,5 +1,5 @@
 <template>
-    <Search />
+    <Search class="search"/>
 </template>
 <script>
 import Search from '@/components/Search.vue'
@@ -8,3 +8,8 @@ name: "search",
 components: {Search},
 };
 </script>
+<style>
+.search {
+  margin-top: 50px;
+}
+</style>

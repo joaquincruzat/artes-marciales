@@ -7,6 +7,7 @@ import Results from '../views/Results.vue'
 import NotFound from '../views/NotFound.vue'
 
 
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -29,7 +30,11 @@ const routes = [
     path: '/list/:id',
     name: 'results',
     component: Results
-  }
+  },
+  {
+    path: '*',
+    component: NotFound
+  },
 ]
 
 const router = new VueRouter({

@@ -1,7 +1,7 @@
-<template>
+<template >
   <div>
-    <h4>Buscar un peleador por id</h4>
-    <form class="form-inline" @submit.prevent="findPeleadores(id)">
+    <h4 class="title-search">Buscar un peleador por id</h4>
+    <form class="form-inline form-search" @submit.prevent="findPeleadores(id)">
       <div class="form-group mx-sm-3 mb-2">
         <input
           type="text"
@@ -34,4 +34,14 @@ export default {
 </script>
 
 <style>
+
+.title-search {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.form-search {
+    text-align: center;
+    justify-content: center;
+}
+
 </style>

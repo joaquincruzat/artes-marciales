@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Listado de peleadores</h1>
+  <div class="list">
+    <h1 class="title-list">Listado de peleadores</h1>
     <ul>
       <li
         v-for="peleador in peleadores"
@@ -21,8 +21,8 @@ export default {
   created() {
     fetch("/peleadores.json")
       .then((res) => res.json())
-      .then((data) => {
-        this.peleadores = data;
+      .then((peleadores) => {
+        this.peleadores = peleadores;
       });
   },
   methods: {
@@ -37,4 +37,9 @@ export default {
 li {
   cursor: pointer;
 }
+.title-list {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
 </style>
